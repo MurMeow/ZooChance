@@ -1,0 +1,18 @@
+<form class="testform">
+  <label
+          class="testform__label"
+          *ngFor="let item of test.answers;
+          let i = index
+  "
+  >
+    <input type="radio"
+           name="radio"
+           class="testform__checkbox"
+           (click)="checkHandler(i)"
+    >
+    <div class="testform__helper">
+
+    </div>
+    <p class="testform__text">{{item.answer}}</p>
+  </label>
+</form>

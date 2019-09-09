@@ -1,0 +1,60 @@
+<section class="test" id="test">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2
+            *ngIf="!testIsOver"
+        >Пройдите тест, что бы узнать, готовы ли Вы к такому шагу.</h2>
+        <h4 class="test__heading"
+            *ngIf="!testIsOver"
+        >
+          {{tests[activeTest].question}}
+        </h4>
+
+        <div class="test__heading result__card"
+             *ngIf="testIsOver"
+        >
+          <div class="advice">
+            <div class="advice2">
+              <h2>
+                Вы готовы на {{precentAnswerValue}} % !!!
+              </h2>
+              <p>{{textAdvice}}</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <app-testform *ngIf="!testIsOver"
+                      [test]="tests[activeTest]"
+                      [checkHandler]="checkAnswerHandler"
+        >
+
+        </app-testform>
+
+
+
+        <app-button
+                [text]="buttonText"
+                [section]="'test'"
+                [clickHandler]="nexTestHandler"
+        >
+
+        </app-button>
+      </div>
+
+      <div class="col-6">
+        <app-progressbar
+                [activeTest]="activeTest"
+                [testLength]="testLength"
+        >
+        </app-progressbar>
+      </div>
+    </div>
+  </div>
+</section>

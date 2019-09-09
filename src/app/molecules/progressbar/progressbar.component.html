@@ -1,0 +1,8 @@
+<div class="progressbar">
+  <div [style.width.%]="(activeTest+1)/testLength*100" class="progressbar__inner">
+
+  </div>
+</div>
+<p class="progressbar__text">
+  {{activeTest+1}} вопросов из {{testLength}}
+</p>

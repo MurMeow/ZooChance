@@ -1,0 +1,29 @@
+<nav  [class]="section+'__nav nav'"
+      [class.nav_open]="isNavOpen"
+      [class.nav_main]="isNavMain" 
+      id="nav"
+  >
+
+  <ul class="nav__list">
+    <app-nav-item  *ngFor= "
+      let navItem of navList;
+      let i = index;
+      let first = first;
+      let last= last;
+      let odd = odd;
+      let even = even
+                      "
+      [link]="navItem.link"
+      [text]="navItem.text"
+      [queryParams]="navItem.queryParams ? navItem.queryParams : {}"
+      [first]="first"
+      [last]="last"
+      [even]="even"
+      [odd]="odd" 
+      >
+    </app-nav-item>
+
+  </ul>
+
+
+</nav>

@@ -1,0 +1,25 @@
+<section class="blog" id="blog">
+    <div class="blockCol--align__center">
+        <h5>Они нашли свою семью!</h5>
+        <div class="block--border__thin">
+            <div class="block--border__wide">
+                <div class="block--border__fat">
+                    <div class="bloc__groupPhoto"
+                        *ngFor="
+                        let item of groupPhoto
+                        let i = index;"
+                    >
+                        <app-projector
+                                [section]="'blog'"
+                                [bg]="item.bg"
+                                [alt]="item.heading"
+                                [index]="i"
+                        ></app-projector>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>

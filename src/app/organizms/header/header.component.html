@@ -1,0 +1,16 @@
+<header class="header" [class.isDark] = "isDark" id="header">
+    <div class="container">
+        <div class = "row">
+            <div class = "col-2">
+                <app-logo [block]="'header'"></app-logo>
+            </div>
+            <div class = "col-8 col-md-10 d-md-block" [class.d-none]="!isOpen" >
+                <app-nav [section]="'header'" [navList]="navList" [isNavOpen]="isOpen"></app-nav>
+            </div>
+            <div class = "col-2 ml-auto">
+                <app-button [section]="'d-block d-md-none nav'" [text]="buttonText" [clickHandler]="isOpenHandler"></app-button>
+            </div>
+        </div>
+    </div>
+</header>
+

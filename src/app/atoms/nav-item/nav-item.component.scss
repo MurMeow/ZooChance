@@ -1,0 +1,11 @@
+.nav__anchor{
+  color: #218359;
+}
+.nav{
+  &__anchor{
+    padding: 7px 10px;
+    &_active{
+      color:#FF4900	;
+    }
+  }
+}

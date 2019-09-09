@@ -1,0 +1,25 @@
+.slider{
+  display: flex;
+  &__list{
+    display: flex;
+  }
+  &__slide{
+    display: none;
+    min-width: 33.333%;
+    padding: 5px;
+
+    &_active, &_prev, &_next{
+      display: block;
+    }
+    &_prev{
+      order: 1;
+    }
+    &_active{
+      order: 2;
+    }
+    &_next{
+      order: 3;
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+@import "../../../@theme/index";
+
+.button{
+  border:none;
+  border-radius: 100px;
+  background: $buttonBgMain;
+  box-shadow: $buttonBS;
+  padding: 8px 20px 12px;
+  color: $buttonTextMain;
+  transition: all 0.4s ease;
+  &:hover, &:focus{
+    box-shadow: none;
+  }
+}

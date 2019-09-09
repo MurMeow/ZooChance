@@ -1,0 +1,9 @@
+@import '../../../@theme/index';
+.header{
+    padding: 20px 0;
+    position: relative;
+    &.isDark{
+        background: $bgHeader;
+        
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../../@theme/index';
+
+.progressbar{
+  height: 20px;
+  width: 400px;
+  border: 1px solid #ff4900;
+  position: relative;
+  background: #ff5c1a63;
+  &__inner{
+    position: absolute;
+    height: 100%;
+    background: #ff4900;
+  }
+}

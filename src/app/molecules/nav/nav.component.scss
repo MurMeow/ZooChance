@@ -1,0 +1,32 @@
+@import '../../../@theme/index';
+
+.nav{
+    padding: 10px 0;
+    display: none;
+    &_open{
+        display: block;
+    }
+
+    @media #{$md}{
+        display: block;
+    }
+    
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.header__nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: #bad2c78c;
+    @media #{$md}{
+        position: relative;
+        background: none;
+    }
+}

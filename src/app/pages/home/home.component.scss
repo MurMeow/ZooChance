@@ -1,0 +1,15 @@
+@import '../../../@theme/index';
+
+.home{
+  &__heading{
+    color: $text;
+    &_inner{
+      display: block;
+    }
+  }
+  &__intro{
+    color: $text;
+    padding-bottom: 45px;
+  }
+
+}

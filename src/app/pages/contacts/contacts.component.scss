@@ -1,0 +1,25 @@
+.contacts{
+  padding: 0px;
+  color: #218359;
+  h2{
+    width: inherit;
+    margin: 10px auto;
+    font-size: 1.5rem;
+  }
+  .section__call{
+    p{
+      margin: 5px 0 10px 0;
+    }
+  }
+  .section__contacts{
+    display: flex;
+    justify-content: space-between;
+    .group{
+      margin-top: 1rem;
+      h3{
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+}

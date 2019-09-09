@@ -1,0 +1,43 @@
+<div class="slider">
+  <div class="col-1">
+      <app-arrow 
+      [section]="'catalog'" 
+      [modificator]="'left'" 
+      [clickHandler]="arrowLeftHandler">
+      </app-arrow>
+  </div>
+  <div class="col-10">
+    <div class="slider__list">
+      <div 
+      [class.slider__slide_active]="i == active"
+      [class.slider__slide_next]="i == next"
+      [class.slider__slide_prev]="i == prev"
+      [class.slider__slide]="1==1"
+      *ngFor="
+      let item of slides 
+      let i = index;"
+      >
+        <app-catalogcard 
+          [bg]="item.bg"
+          [heading]="item.heading"
+          [link]="item.link"
+          [price]="item.price"
+          [section]="'catalog'"
+
+          >
+    
+        </app-catalogcard>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="col-1">
+      <app-arrow 
+      [section]="'catalog'" 
+      [modificator]="'right'" 
+      [clickHandler]="arrowRightHandler">
+      </app-arrow>
+  </div>
+</div>
+

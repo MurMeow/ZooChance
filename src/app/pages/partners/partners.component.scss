@@ -1,0 +1,18 @@
+@import '../../../@theme/index';
+.partners{
+  color: #218359;
+  h4{
+    width: max-content;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  a{
+    color: #218359;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+  }
+  img{
+    width: 1rem;
+    height: 1rem;
+  }
+}

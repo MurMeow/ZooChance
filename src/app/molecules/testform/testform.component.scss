@@ -1,0 +1,28 @@
+@import '../../../@theme/index';
+
+.testform{
+  $this:&;
+
+  &__label{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  &__helper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ff4900;
+  }
+  &__text{
+    padding-left: 50px;
+    font-size: 1rem;
+  }
+  &__checkbox:checked + #{$this}__helper{
+    background: #ff4900;
+  }
+}

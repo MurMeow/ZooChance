@@ -1,0 +1,15 @@
+<li class="nav__list-item"
+    [ngClass] = "{
+        first:first,
+        last:last,
+        even:even,
+        odd:odd
+      }">
+    <a [routerLink]="link" [queryParams]="queryParams" class="nav__anchor"
+    routerLinkActive="nav__anchor_active"
+    [routerLinkActiveOptions]="{exact:true}"
+    >
+    {{text}}
+    </a>
+</li>
+

@@ -1,0 +1,24 @@
+<section class="partners" id="partners">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="blockCol--align__center">
+          <h4>
+            Благодаря Вам, этот список расширяется!!!)
+          </h4>
+          <ul class="partners__links">
+            <li *ngFor= "let navItem of partnersList">
+              <img src="../../../assets/images/icon/1lap.svg"/><a
+                      [href]="navItem.link"
+                      [text]="navItem.text"
+                      target="_blank"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>
