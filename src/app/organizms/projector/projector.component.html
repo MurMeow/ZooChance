@@ -1,5 +1,8 @@
 <section [class]="section+'__projector'" [id]="section+'__projector'">
     <div class="box" [id]="index">
-        <img [src]="bg" [alt]="alt"/>
+        <img [src]="bg" [alt]="alt" class="main__img"/>
+        <img [src]="bg" [alt]="alt" [class]="animation" [ngStyle]="{'animation-delay':sec}"/>
     </div>
+
 </section>
+
