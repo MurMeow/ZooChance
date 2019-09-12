@@ -1,11 +1,86 @@
 @import '../../../@theme/index';
+
+
+
 .blog__projector{
   margin: 0;
   padding: 0;
-img{
-  margin: 0;
-  padding: 0;
-  width: 80px;
-  object-fit: cover;
+  .main__img{
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+  img.animation{
+    margin: 0 0 0 -80px;
+    padding: 0;
+    width: 70px;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+  }
 }
+
+.animation{
+  animation-name: emphasis;
+  animation-duration: 6s;
+  //animation-direction: alternate;
+  animation-iteration-count:infinite;
+  //animation-delay: 2s;
+}
+
+@keyframes emphasis {
+  0% {
+    transform: scale(.8);
+    opacity: 0.8;
+    //width: 80px;
+    position: fixed;
+    z-index: 5;
+    //margin: 20px;
+
+  }
+  //30% {
+  //  //transform: scale(1.5);
+  //  opacity: 1;
+  //  width: 110px;
+  //  position: fixed;
+  //  z-index: 5;
+  //  margin: 20px;
+  //}
+  50%{
+    transform: scale(1.2);
+    opacity: 1;
+    //width: 100px;
+    position: fixed;
+    z-index: 5;
+    //margin: 20px;
+  }
+  70%{
+    transform: scale(1.2);
+    opacity: 1;
+    //width: 100px;
+    position: fixed;
+    z-index: 5;
+    //margin: 20px;
+  }
+  //78.75% {
+  //  //transform: scale(1.667);
+  //  opacity: 1;
+  //  width: 110px;
+  //  position: fixed;
+  //  z-index: 5;
+  //  margin: 20px;
+  //}
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+    //width: 120px;
+    position: fixed;
+    z-index: 5;
+    //margin: 20px;
+  }
+}
+#toAnimate {
+  animation: emphasis 700ms ease-in-out 10ms infinite alternate forwards;
 }
